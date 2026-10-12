@@ -1,0 +1,440 @@
+{
+  "id": "917690e6-eb7c-454c-a9bc-8e6a38d48def",
+  "revision": 0,
+  "last_node_id": 7,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [
+        40,
+        100
+      ],
+      "size": [
+        320,
+        410
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ls_demo_product.png",
+        "image"
+      ],
+      "title": "产品图① · 必填"
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        40,
+        590
+      ],
+      "size": [
+        320,
+        410
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ls_demo_product.png",
+        "image"
+      ],
+      "title": "产品图② · 可选，默认旁路"
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        410,
+        100
+      ],
+      "size": [
+        320,
+        410
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ls_demo_reference.png",
+        "image"
+      ],
+      "title": "统一参考图① · 同时参考版式、配色、字体"
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        410,
+        590
+      ],
+      "size": [
+        320,
+        410
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ls_demo_reference.png",
+        "image"
+      ],
+      "title": "统一参考图② · 可选，默认旁路"
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        410,
+        1080
+      ],
+      "size": [
+        320,
+        410
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ls_demo_reference.png",
+        "image"
+      ],
+      "title": "统一参考图③ · 可选，默认旁路"
+    },
+    {
+      "id": 6,
+      "type": "LSAmazonSimpleSet",
+      "pos": [
+        800,
+        100
+      ],
+      "size": [
+        440,
+        700
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "产品图",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "参考图",
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "name": "产品图2",
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "name": "产品图3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "参考图2",
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "name": "参考图3",
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "name": "参考图4",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "参考图5",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "参考图6",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "套图",
+          "type": "IMAGE",
+          "shape": 6,
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "提示词与结果",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LSAmazonSimpleSet"
+      },
+      "widgets_values": [
+        "",
+        "为示例音箱规划不同页面。只描述图片可见特征，不虚构续航、功率或认证。画面文案请自行生成简洁英文。",
+        4,
+        "3:4",
+        "2K",
+        "英文"
+      ],
+      "title": "只需调整这里 · 一键套图"
+    },
+    {
+      "id": 7,
+      "type": "SaveImage",
+      "pos": [
+        1330,
+        100
+      ],
+      "size": [
+        900,
+        1050
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "LS_NanoBanana_Demo"
+      ],
+      "title": "生成结果 · 自动保存套图"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      2,
+      0,
+      6,
+      2,
+      "IMAGE"
+    ],
+    [
+      3,
+      3,
+      0,
+      6,
+      1,
+      "IMAGE"
+    ],
+    [
+      4,
+      4,
+      0,
+      6,
+      4,
+      "IMAGE"
+    ],
+    [
+      5,
+      5,
+      0,
+      6,
+      5,
+      "IMAGE"
+    ],
+    [
+      6,
+      6,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "① 产品图：只负责产品外观",
+      "bounding": [
+        20,
+        40,
+        360,
+        1030
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "② 统一参考图：版式 / 配色 / 字体一起参考",
+      "bounding": [
+        390,
+        40,
+        360,
+        1470
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "③ 简单参数",
+      "bounding": [
+        780,
+        40,
+        480,
+        800
+      ],
+      "color": "#7f6eb3",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "④ 自动生成与保存",
+      "bounding": [
+        1310,
+        40,
+        940,
+        1160
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7,
+      "offset": [
+        40,
+        30
+      ]
+    }
+  },
+  "version": 0.4
+}

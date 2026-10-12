@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b2d"/><stop offset="1" stop-color="#0c1020"/></linearGradient></defs>
+<rect width="1200" height="460" rx="24" fill="url(#bg)"/><circle cx="1090" cy="0" r="240" fill="#9c8cff" opacity=".08"/>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="52" y="54" fill="#9c8cff" font-size="17" font-weight="700" letter-spacing="3">LS / COMFYUI CUSTOM NODES</text>
+<text x="50" y="121" fill="#f3f6ff" font-size="45" font-weight="700">LS NanoBanana</text>
+<text x="52" y="164" fill="#b3c2d8" font-size="21">Product references to a consistent advertising image set.</text>
+<rect x="52" y="208" width="350" height="156" rx="16" fill="#172338" stroke="#2d3d55"/>
+<rect x="72" y="231" width="30" height="5" rx="2" fill="#9c8cff"/>
+<text x="72" y="276" fill="#f3f6ff" font-size="24" font-weight="700">Unified references</text>
+<text x="72" y="311" fill="#b3c2d8" font-size="17">Layout + color + typography</text>
+<text x="72" y="337" fill="#b3c2d8" font-size="17">One or multiple reference images</text>
+<rect x="426" y="208" width="350" height="156" rx="16" fill="#172338" stroke="#2d3d55"/>
+<rect x="446" y="231" width="30" height="5" rx="2" fill="#9c8cff"/>
+<text x="446" y="276" fill="#f3f6ff" font-size="24" font-weight="700">Simple generation</text>
+<text x="446" y="311" fill="#b3c2d8" font-size="17">Six everyday settings</text>
+<text x="446" y="337" fill="#b3c2d8" font-size="17">Native 1K / 2K / 4K selection</text>
+<rect x="800" y="208" width="350" height="156" rx="16" fill="#172338" stroke="#2d3d55"/>
+<rect x="820" y="231" width="30" height="5" rx="2" fill="#9c8cff"/>
+<text x="820" y="276" fill="#f3f6ff" font-size="24" font-weight="700">Failure recovery</text>
+<text x="820" y="311" fill="#b3c2d8" font-size="17">Confirmed failures retry</text>
+<text x="820" y="337" fill="#b3c2d8" font-size="17">Keep successful images</text>
+<text x="52" y="413" fill="#9c8cff" font-size="17">16 nodes  /  CPython 3.13 bytecode edition  /  Provider API required</text></g></svg>

@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-ls-nanobanana"
+version = "0.1.0"
+description = "LS NanoBanana: product-reference image generation and consistent advertising sets for ComfyUI"
+requires-python = ">=3.13,<3.14"
+license = { file = "LICENSE" }
+dependencies = ["requests>=2.20.0", "numpy", "pillow", "opencv-python"]
+
+[project.urls]
+Repository = "https://github.com/diyibaak/ComfyUI-LS-NanoBanana"
+"Bug Tracker" = "https://github.com/diyibaak/ComfyUI-LS-NanoBanana/issues"
+
+[tool.comfy]
+DisplayName = "LS NanoBanana"
