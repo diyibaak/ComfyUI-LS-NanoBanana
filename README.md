@@ -90,7 +90,3 @@ python -m pip install -r ComfyUI-LS-NanoBanana/requirements.txt
 发布前验证字节码导入、节点输入输出、单图/多图工作流校验及自动补跑模拟测试。图片接口未作为本次发布验证进行收费调用。界面示例与输入插图不代表实际收费生成效果。
 
 `.pyc` 是编译字节码，**不是严格加密**，也不是跨 Python 版本的发布格式。可编辑源码与原始本机配置没有包含在本仓库。
-
-## 致谢与许可
-
-保留原 MIT License 及 `xinbao` 的版权声明。原项目参考：[comfyui-banana-li](https://github.com/98624017/comfyui-banana-li)。本发布整理、扩展节点和示例由本仓库维护；不代表上游或服务商官方发布。
