@@ -1,7 +1,5 @@
 # ComfyUI LS NanoBanana
 
-![功能概览](docs/assets/overview.svg)
-
 **产品图 + 统一参考图 → 自动规划 → 一组视觉一致的商业图片。**
 
 English: ComfyUI nodes for product-reference image generation, unified-reference advertising sets, visual analysis and prompt planning. This repository distributes a **CPython 3.13 bytecode runtime**, not the editable source edition.
@@ -10,18 +8,23 @@ English: ComfyUI nodes for product-reference image generation, unified-reference
 
 ## 功能展示
 
-概览图为功能流程示意。下面是导入公开示例后的实际 ComfyUI 节点界面，API Key 保持为空。
+### LS_Amazon套图规划Agent V19.2
 
-![统一参考简化工作流](docs/assets/workflow_preview.png)
+![LS_Amazon套图规划Agent V19.2](docs/assets/planner_v19_2.png)
 
-| 功能 | 使用方式 |
+根据产品信息、视觉分析与用户文案，统一规划产品套图的图片内容、文案、视觉风格和生图提示词。
+
+| 参数 | 作用 |
 | --- | --- |
-| 统一参考一键套图 | 产品图锁定外观；同一组参考图同时提供版式、色彩、字体、光影 |
-| 六个常用参数 | API Key、需求与文案、图片数量、比例、分辨率、文案语言 |
-| 多图输入 | 简化节点最多支持 3 张产品图、6 张统一参考图；额外图片可选 |
-| 模型生图 | `LS_NanoBananaPro` 提供 NanoBanana 与 GPT Image 模型选项；简化节点固定使用 GPT Image 2.5 Sunburst |
-| 单张自动补跑 | GPT 提交失败或已受理任务明确失败时，按已实现的错误规则补跑；默认额外 3 次 |
-| 产品套图规划 | 保留独立的视觉分析、套图规划、文字叠加、拼接和提示词工具 |
+| 产品名、产品类目、产品特征 | 确定规划对象并锁定产品一致性 |
+| 目标市场语言、页面类型 | 确定画面文案语言与页面方向 |
+| 图片数量、图片比例 | 设置套图数量和画幅 |
+| 文案设置、品牌视觉参考 | 确定文案模式与品牌方向 |
+| 视觉等级、字体风格 | 统一商业视觉和字体体系 |
+| 核心卖点、动作要求、特殊要求 | 补充本次规划需求 |
+| 整套视觉统一锁、产品一致性锁 | 保持整套风格与产品外观一致 |
+
+输出包括 LLM 总控 Prompt、图片规划、文案规划、视觉规划、附加提示词、user_prompt、图片数量、aspect_ratio 和每张图比例规划。
 
 ## 安装
 
